@@ -1,8 +1,13 @@
 import koneksi.Database;
-
-public class Main {
+import model.Dosen;
+import model.Mahasiswa;
+import model.MataKuliah;
+public class Main { 
     public static void main(String[] args){
-        System.out.println("Ini program Main");
+        System.out.println("Ini program main");
         Database.hubungkan();
+        Dosen.tampilanInfo();
+        Mahasiswa.tampilanInfo();
+        MataKuliah.tampilanInfo();
     }
 }
